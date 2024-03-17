@@ -1,10 +1,8 @@
 # Retrieval(Vector Search)
----
 
 문서 검색 QA task
 
 ## Setup
----
 
 ### Install
 `git clone `
@@ -14,12 +12,10 @@
 * Reload the session!
 
 ## Data
----
 
 private
 
 ## Run
----
 
 ### Chunking & Vector mapping
 * BGE, KorSIM, Openai(ada)
