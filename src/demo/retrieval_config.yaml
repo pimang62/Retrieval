@@ -1,0 +1,25 @@
+database:
+  txt: "BM 사장님 FAQ"
+  pdf: "코로나19 주요 Q&A pdf"
+  docx: "ER 모델 설명 docx"
+
+embedding:
+  bge: "BAAI/bge-large-en-v1.5 (base)"
+  korsim: "BM-K/KoSimCSE-bert (base)"
+  openai: "text-embedding-ada-002 (base)"
+
+chunk_size:
+  - 100
+  - 300
+  - 1000
+
+chunk_overlap:
+  - 0
+
+top_k:
+  - 3
+
+distance_metric:
+  - "cosine"
+  - "euclidean"
+  - "manhattan"
