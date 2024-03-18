@@ -5,10 +5,11 @@
 ## Setup
 
 ### Install
-`git clone `
-`conda create -n exper python==3.10`
-`conda activate exper`
-`pip install -r requirements.txt`
+`git clone
+conda create -n exper python==3.10`
+conda activate exper`
+pip install -r requirements.txt`
+
 * Reload the session!
 
 ## Data
@@ -23,8 +24,8 @@ private
 `bash create_index.sh`
 
 ### Run demo
-`cd src`
-`bash run_demo.sh`
+`cd src
+bash run_demo.sh`
 
 ### Show demo
 `cat demo.log`
