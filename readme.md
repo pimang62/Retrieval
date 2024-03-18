@@ -1,4 +1,4 @@
-# Retrieval(Vector Search)
+# Retrieval
 
 문서 검색 QA task
 
