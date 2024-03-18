@@ -1,6 +1,7 @@
-# Retrieval(Vector Search)
+# Retrieval
 
-문서 검색 QA task
+* 문서 검색 QA task
+  * Vector Search
 
 ## Setup
 
