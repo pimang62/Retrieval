@@ -9,8 +9,8 @@ from pymilvus import (
 )
 
 import os, sys
-sys.path.append(os.path.abspath(os.path.join(os.pardir, 'src')))
-from mzlang.embeddings import OpenAIEmbedding
+sys.path.append(os.pardir)
+from embeddings import OpenAIEmbedding
 
 def create_collection(collection_name, dim):
     if utility.has_collection(collection_name):
