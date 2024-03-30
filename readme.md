@@ -29,7 +29,7 @@ bash create_index.sh
 
 ### Run demo
 ```python
-cd src
+cd src/script
 bash run_demo.sh
 ```
 
