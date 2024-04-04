@@ -1,155 +1,0 @@
-
-Collecting usage statistics. To deactivate, set browser.gatherUsageStats to False.
-
-
-  You can now view your Streamlit app in your browser.
-
-  URL: http://0.0.0.0:9100
-
-
-  A new version of Streamlit is available.
-
-  See what's new at https://discuss.streamlit.io/c/announcements
-
-  Enter the following command to upgrade:
-  $ pip install streamlit --upgrade
-
-2024-03-15 15:48:08.297 Uncaught app exception
-Traceback (most recent call last):
-  File "/home/pimang62/.conda/envs/exper/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 535, in _run_script
-    exec(code, module.__dict__)
-  File "/home/pimang62/projects/ir/a276_document_retrieval/src/demo/run_demo.py", line 3, in <module>
-    from vectorstore import VectorStore
-  File "/home/pimang62/projects/ir/a276_document_retrieval/src/script/../demo/vectorstore.py", line 11, in <module>
-    from embeddings.huggingface import TransformersEmbedding
-  File "/home/pimang62/projects/ir/a276_document_retrieval/src/script/../../embeddings/__init__.py", line 6, in <module>
-    from .openai_api import OpenAIEmbedding
-  File "/home/pimang62/projects/ir/a276_document_retrieval/src/script/../../embeddings/openai_api.py", line 17, in <module>
-    from mzlang.embeddings.base import Embeddings
-ModuleNotFoundError: No module named 'mzlang'
-2024-03-15 15:52:39.910 Uncaught app exception
-Traceback (most recent call last):
-  File "/home/pimang62/.conda/envs/exper/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 535, in _run_script
-    exec(code, module.__dict__)
-  File "/home/pimang62/projects/ir/a276_document_retrieval/src/demo/run_demo.py", line 3, in <module>
-    from vectorstore import VectorStore
-  File "/home/pimang62/projects/ir/a276_document_retrieval/src/script/../demo/vectorstore.py", line 12, in <module>
-    from embeddings.openai_api import OpenAIEmbedding
-  File "/home/pimang62/projects/ir/a276_document_retrieval/src/script/../../embeddings/__init__.py", line 6, in <module>
-    from .openai_api import OpenAIEmbedding
-  File "/home/pimang62/projects/ir/a276_document_retrieval/src/script/../../embeddings/openai_api.py", line 18, in <module>
-    from base import Embeddings
-ModuleNotFoundError: No module named 'base'
-2024-03-15 15:56:34.426 Uncaught app exception
-Traceback (most recent call last):
-  File "/home/pimang62/.conda/envs/exper/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 535, in _run_script
-    exec(code, module.__dict__)
-  File "/home/pimang62/projects/ir/a276_document_retrieval/src/demo/run_demo.py", line 79, in <module>
-    main()
-  File "/home/pimang62/projects/ir/a276_document_retrieval/src/demo/run_demo.py", line 60, in main
-    vectorstore = VectorStore(database_name=database_options[database],
-  File "/home/pimang62/projects/ir/a276_document_retrieval/src/script/../demo/vectorstore.py", line 47, in __init__
-    self.embedding_model = OpenAIEmbedding()
-  File "/home/pimang62/.conda/envs/exper/lib/python3.10/site-packages/pydantic/main.py", line 164, in __init__
-    __pydantic_self__.__pydantic_validator__.validate_python(data, self_instance=__pydantic_self__)
-pydantic_core._pydantic_core.ValidationError: 1 validation error for OpenAIEmbedding
-  Value error, Did not find openai_api_key, please add an environment variable `OPENAI_API_KEY` which contains it, or pass  `openai_api_key` as a named parameter. [type=value_error, input_value={}, input_type=dict]
-    For further information visit https://errors.pydantic.dev/2.5/v/value_error
-Loading transformers model BAAI/bge-large-en-v1.5
-config.json:   0%|          | 0.00/779 [00:00<?, ?B/s]config.json: 100%|██████████| 779/779 [00:00<00:00, 2.74MB/s]
-model.safetensors:   0%|          | 0.00/1.34G [00:00<?, ?B/s]model.safetensors:   1%|          | 10.5M/1.34G [00:00<00:29, 44.7MB/s]model.safetensors:   2%|▏         | 21.0M/1.34G [00:00<00:27, 47.5MB/s]model.safetensors:   2%|▏         | 31.5M/1.34G [00:00<00:25, 50.5MB/s]model.safetensors:   3%|▎         | 41.9M/1.34G [00:00<00:24, 52.8MB/s]model.safetensors:   4%|▍         | 52.4M/1.34G [00:01<00:24, 53.0MB/s]model.safetensors:   5%|▍         | 62.9M/1.34G [00:01<00:25, 50.2MB/s]model.safetensors:   5%|▌         | 73.4M/1.34G [00:01<00:25, 50.3MB/s]model.safetensors:   6%|▋         | 83.9M/1.34G [00:01<00:24, 52.2MB/s]model.safetensors:   7%|▋         | 94.4M/1.34G [00:02<00:31, 39.5MB/s]model.safetensors:   8%|▊         | 105M/1.34G [00:02<00:32, 38.1MB/s] model.safetensors:   9%|▊         | 115M/1.34G [00:02<00:32, 37.3MB/s]model.safetensors:   9%|▉         | 126M/1.34G [00:02<00:31, 38.9MB/s]model.safetensors:  10%|█         | 136M/1.34G [00:03<00:28, 42.5MB/s]model.safetensors:  11%|█         | 147M/1.34G [00:03<00:26, 44.5MB/s]model.safetensors:  12%|█▏        | 157M/1.34G [00:03<00:25, 46.3MB/s]model.safetensors:  13%|█▎        | 168M/1.34G [00:03<00:24, 48.4MB/s]model.safetensors:  13%|█▎        | 178M/1.34G [00:03<00:22, 50.7MB/s]model.safetensors:  14%|█▍        | 189M/1.34G [00:04<00:22, 51.7MB/s]model.safetensors:  15%|█▍        | 199M/1.34G [00:04<00:21, 53.5MB/s]model.safetensors:  16%|█▌        | 210M/1.34G [00:04<00:20, 54.2MB/s]model.safetensors:  16%|█▋        | 220M/1.34G [00:04<00:20, 54.7MB/s]model.safetensors:  17%|█▋        | 231M/1.34G [00:04<00:20, 54.3MB/s]model.safetensors:  18%|█▊        | 241M/1.34G [00:04<00:19, 55.4MB/s]model.safetensors:  19%|█▉        | 252M/1.34G [00:05<00:19, 56.4MB/s]model.safetensors:  20%|█▉        | 262M/1.34G [00:05<00:19, 56.1MB/s]model.safetensors:  20%|██        | 273M/1.34G [00:05<00:18, 56.3MB/s]model.safetensors:  21%|██        | 283M/1.34G [00:05<00:18, 56.5MB/s]model.safetensors:  22%|██▏       | 294M/1.34G [00:05<00:18, 56.4MB/s]model.safetensors:  23%|██▎       | 304M/1.34G [00:06<00:18, 56.5MB/s]model.safetensors:  23%|██▎       | 315M/1.34G [00:06<00:18, 55.6MB/s]model.safetensors:  24%|██▍       | 325M/1.34G [00:06<00:18, 56.0MB/s]model.safetensors:  25%|██▌       | 336M/1.34G [00:06<00:17, 56.2MB/s]model.safetensors:  26%|██▌       | 346M/1.34G [00:06<00:17, 56.4MB/s]model.safetensors:  27%|██▋       | 357M/1.34G [00:07<00:17, 56.6MB/s]model.safetensors:  27%|██▋       | 367M/1.34G [00:07<00:17, 56.7MB/s]model.safetensors:  28%|██▊       | 377M/1.34G [00:07<00:17, 55.9MB/s]model.safetensors:  29%|██▉       | 388M/1.34G [00:07<00:17, 55.9MB/s]model.safetensors:  30%|██▉       | 398M/1.34G [00:07<00:16, 56.1MB/s]model.safetensors:  31%|███       | 409M/1.34G [00:07<00:16, 56.0MB/s]model.safetensors:  31%|███▏      | 419M/1.34G [00:08<00:16, 56.2MB/s]model.safetensors:  32%|███▏      | 430M/1.34G [00:08<00:16, 56.3MB/s]model.safetensors:  33%|███▎      | 440M/1.34G [00:08<00:15, 56.5MB/s]model.safetensors:  34%|███▎      | 451M/1.34G [00:08<00:15, 56.2MB/s]model.safetensors:  34%|███▍      | 461M/1.34G [00:08<00:15, 56.0MB/s]model.safetensors:  35%|███▌      | 472M/1.34G [00:09<00:15, 56.0MB/s]model.safetensors:  36%|███▌      | 482M/1.34G [00:09<00:15, 55.4MB/s]model.safetensors:  37%|███▋      | 493M/1.34G [00:09<00:15, 55.7MB/s]model.safetensors:  38%|███▊      | 503M/1.34G [00:09<00:15, 55.5MB/s]model.safetensors:  38%|███▊      | 514M/1.34G [00:09<00:15, 54.9MB/s]model.safetensors:  39%|███▉      | 524M/1.34G [00:10<00:14, 55.8MB/s]model.safetensors:  40%|███▉      | 535M/1.34G [00:10<00:14, 55.1MB/s]model.safetensors:  41%|████      | 545M/1.34G [00:10<00:14, 56.7MB/s]model.safetensors:  41%|████▏     | 556M/1.34G [00:10<00:13, 56.6MB/s]model.safetensors:  42%|████▏     | 566M/1.34G [00:10<00:18, 42.0MB/s]model.safetensors:  43%|████▎     | 577M/1.34G [00:11<00:17, 43.6MB/s]model.safetensors:  44%|████▍     | 587M/1.34G [00:11<00:17, 43.8MB/s]model.safetensors:  45%|████▍     | 598M/1.34G [00:11<00:16, 44.1MB/s]model.safetensors:  45%|████▌     | 608M/1.34G [00:11<00:15, 46.5MB/s]model.safetensors:  46%|████▌     | 619M/1.34G [00:12<00:14, 48.6MB/s]model.safetensors:  47%|████▋     | 629M/1.34G [00:12<00:14, 50.4MB/s]model.safetensors:  48%|████▊     | 640M/1.34G [00:12<00:13, 52.2MB/s]model.safetensors:  48%|████▊     | 650M/1.34G [00:12<00:12, 54.0MB/s]model.safetensors:  49%|████▉     | 661M/1.34G [00:12<00:12, 54.9MB/s]model.safetensors:  50%|█████     | 671M/1.34G [00:12<00:11, 56.1MB/s]model.safetensors:  51%|█████     | 682M/1.34G [00:13<00:11, 55.6MB/s]model.safetensors:  52%|█████▏    | 692M/1.34G [00:13<00:11, 56.0MB/s]model.safetensors:  52%|█████▏    | 703M/1.34G [00:13<00:11, 54.9MB/s]model.safetensors:  53%|█████▎    | 713M/1.34G [00:13<00:11, 54.2MB/s]model.safetensors:  54%|█████▍    | 724M/1.34G [00:13<00:11, 53.8MB/s]model.safetensors:  55%|█████▍    | 734M/1.34G [00:14<00:13, 43.6MB/s]model.safetensors:  56%|█████▌    | 744M/1.34G [00:14<00:13, 44.7MB/s]model.safetensors:  56%|█████▋    | 755M/1.34G [00:14<00:12, 45.6MB/s]model.safetensors:  57%|█████▋    | 765M/1.34G [00:14<00:12, 47.4MB/s]model.safetensors:  58%|█████▊    | 776M/1.34G [00:15<00:11, 49.6MB/s]model.safetensors:  59%|█████▊    | 786M/1.34G [00:15<00:10, 51.3MB/s]model.safetensors:  59%|█████▉    | 797M/1.34G [00:15<00:10, 53.7MB/s]model.safetensors:  60%|██████    | 807M/1.34G [00:15<00:09, 54.2MB/s]model.safetensors:  61%|██████    | 818M/1.34G [00:15<00:10, 51.0MB/s]model.safetensors:  62%|██████▏   | 828M/1.34G [00:16<00:10, 51.1MB/s]model.safetensors:  63%|██████▎   | 839M/1.34G [00:16<00:09, 52.0MB/s]model.safetensors:  63%|██████▎   | 849M/1.34G [00:16<00:09, 52.8MB/s]model.safetensors:  64%|██████▍   | 860M/1.34G [00:16<00:08, 53.9MB/s]model.safetensors:  65%|██████▍   | 870M/1.34G [00:16<00:08, 54.1MB/s]model.safetensors:  66%|██████▌   | 881M/1.34G [00:17<00:08, 53.7MB/s]model.safetensors:  66%|██████▋   | 891M/1.34G [00:17<00:08, 55.5MB/s]model.safetensors:  67%|██████▋   | 902M/1.34G [00:17<00:07, 54.9MB/s]model.safetensors:  68%|██████▊   | 912M/1.34G [00:17<00:07, 56.4MB/s]model.safetensors:  69%|██████▉   | 923M/1.34G [00:17<00:07, 56.6MB/s]model.safetensors:  70%|██████▉   | 933M/1.34G [00:18<00:07, 55.4MB/s]model.safetensors:  70%|███████   | 944M/1.34G [00:18<00:07, 52.2MB/s]model.safetensors:  71%|███████   | 954M/1.34G [00:18<00:07, 52.3MB/s]model.safetensors:  72%|███████▏  | 965M/1.34G [00:18<00:07, 52.5MB/s]model.safetensors:  73%|███████▎  | 975M/1.34G [00:18<00:07, 51.9MB/s]model.safetensors:  74%|███████▎  | 986M/1.34G [00:19<00:06, 52.4MB/s]model.safetensors:  74%|███████▍  | 996M/1.34G [00:19<00:06, 53.3MB/s]model.safetensors:  75%|███████▌  | 1.01G/1.34G [00:19<00:06, 52.7MB/s]model.safetensors:  76%|███████▌  | 1.02G/1.34G [00:19<00:05, 55.2MB/s]model.safetensors:  77%|███████▋  | 1.03G/1.34G [00:19<00:05, 56.4MB/s]model.safetensors:  77%|███████▋  | 1.04G/1.34G [00:19<00:05, 56.7MB/s]model.safetensors:  78%|███████▊  | 1.05G/1.34G [00:20<00:05, 57.2MB/s]model.safetensors:  79%|███████▉  | 1.06G/1.34G [00:20<00:04, 57.5MB/s]model.safetensors:  80%|███████▉  | 1.07G/1.34G [00:20<00:04, 57.0MB/s]model.safetensors:  81%|████████  | 1.08G/1.34G [00:20<00:04, 56.6MB/s]model.safetensors:  81%|████████▏ | 1.09G/1.34G [00:20<00:04, 56.9MB/s]model.safetensors:  82%|████████▏ | 1.10G/1.34G [00:21<00:05, 42.4MB/s]model.safetensors:  83%|████████▎ | 1.11G/1.34G [00:21<00:04, 46.3MB/s]model.safetensors:  84%|████████▎ | 1.12G/1.34G [00:21<00:04, 49.1MB/s]model.safetensors:  84%|████████▍ | 1.13G/1.34G [00:21<00:04, 51.5MB/s]model.safetensors:  85%|████████▌ | 1.14G/1.34G [00:22<00:03, 52.9MB/s]model.safetensors:  86%|████████▌ | 1.15G/1.34G [00:22<00:03, 53.9MB/s]model.safetensors:  87%|████████▋ | 1.16G/1.34G [00:22<00:03, 55.0MB/s]model.safetensors:  88%|████████▊ | 1.17G/1.34G [00:22<00:03, 55.3MB/s]model.safetensors:  88%|████████▊ | 1.18G/1.34G [00:22<00:02, 55.5MB/s]model.safetensors:  89%|████████▉ | 1.20G/1.34G [00:22<00:02, 55.3MB/s]model.safetensors:  90%|████████▉ | 1.21G/1.34G [00:23<00:02, 56.0MB/s]model.safetensors:  91%|█████████ | 1.22G/1.34G [00:23<00:02, 47.9MB/s]model.safetensors:  92%|█████████▏| 1.23G/1.34G [00:23<00:02, 49.9MB/s]model.safetensors:  92%|█████████▏| 1.24G/1.34G [00:23<00:02, 51.0MB/s]model.safetensors:  93%|█████████▎| 1.25G/1.34G [00:23<00:01, 52.5MB/s]model.safetensors:  94%|█████████▍| 1.26G/1.34G [00:24<00:01, 53.4MB/s]model.safetensors:  95%|█████████▍| 1.27G/1.34G [00:24<00:01, 54.2MB/s]model.safetensors:  95%|█████████▌| 1.28G/1.34G [00:24<00:01, 54.9MB/s]model.safetensors:  96%|█████████▌| 1.29G/1.34G [00:24<00:00, 55.0MB/s]model.safetensors:  97%|█████████▋| 1.30G/1.34G [00:24<00:00, 55.5MB/s]model.safetensors:  98%|█████████▊| 1.31G/1.34G [00:25<00:00, 56.1MB/s]model.safetensors:  99%|█████████▊| 1.32G/1.34G [00:25<00:00, 54.9MB/s]model.safetensors:  99%|█████████▉| 1.33G/1.34G [00:25<00:00, 56.3MB/s]model.safetensors: 100%|██████████| 1.34G/1.34G [00:25<00:00, 56.1MB/s]model.safetensors: 100%|██████████| 1.34G/1.34G [00:25<00:00, 52.3MB/s]
-tokenizer_config.json:   0%|          | 0.00/366 [00:00<?, ?B/s]tokenizer_config.json: 100%|██████████| 366/366 [00:00<00:00, 1.77MB/s]
-vocab.txt:   0%|          | 0.00/232k [00:00<?, ?B/s]vocab.txt: 100%|██████████| 232k/232k [00:00<00:00, 511kB/s]vocab.txt: 100%|██████████| 232k/232k [00:00<00:00, 511kB/s]
-tokenizer.json:   0%|          | 0.00/711k [00:00<?, ?B/s]tokenizer.json: 100%|██████████| 711k/711k [00:00<00:00, 1.80MB/s]tokenizer.json: 100%|██████████| 711k/711k [00:00<00:00, 1.80MB/s]
-special_tokens_map.json:   0%|          | 0.00/125 [00:00<?, ?B/s]special_tokens_map.json: 100%|██████████| 125/125 [00:00<00:00, 477kB/s]
-Number of documents: 1
-Loading document embeddings (should be saved when creating the vectorstore)
-Loading umap model (should be saved when creating the vectorstore)
-Loading transformers model BAAI/bge-large-en-v1.5
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:07<00:00,  7.47s/it]100%|██████████| 1/1 [00:07<00:00,  7.47s/it]
-  0%|          | 0/3 [00:00<?, ?it/s] 33%|███▎      | 1/3 [00:02<00:04,  2.12s/it] 67%|██████▋   | 2/3 [00:04<00:02,  2.12s/it]100%|██████████| 3/3 [00:06<00:00,  2.24s/it]100%|██████████| 3/3 [00:06<00:00,  2.21s/it]
-findfont: Font family 'NanumGothic' not found.
-findfont: Font family 'NanumGothic' not found.
-findfont: Font family 'NanumGothic' not found.
-findfont: Font family 'NanumGothic' not found.
-findfont: Font family 'NanumGothic' not found.
-findfont: Font family 'NanumGothic' not found.
-findfont: Font family 'NanumGothic' not found.
-findfont: Font family 'NanumGothic' not found.
-findfont: Font family 'NanumGothic' not found.
-findfont: Font family 'NanumGothic' not found.
-/home/pimang62/projects/ir/a276_document_retrieval/src/script/../demo/visualise.py:88: UserWarning: Glyph 50501 (\N{HANGUL SYLLABLE AG}) missing from current font.
-  plt.savefig('test.png')
-/home/pimang62/projects/ir/a276_document_retrieval/src/script/../demo/visualise.py:88: UserWarning: Glyph 49457 (\N{HANGUL SYLLABLE SEONG}) missing from current font.
-  plt.savefig('test.png')
-/home/pimang62/projects/ir/a276_document_retrieval/src/script/../demo/visualise.py:88: UserWarning: Glyph 45843 (\N{HANGUL SYLLABLE DAES}) missing from current font.
-  plt.savefig('test.png')
-/home/pimang62/projects/ir/a276_document_retrieval/src/script/../demo/visualise.py:88: UserWarning: Glyph 44544 (\N{HANGUL SYLLABLE GEUL}) missing from current font.
-  plt.savefig('test.png')
-/home/pimang62/projects/ir/a276_document_retrieval/src/script/../demo/visualise.py:88: UserWarning: Glyph 51008 (\N{HANGUL SYLLABLE EUN}) missing from current font.
-  plt.savefig('test.png')
-/home/pimang62/projects/ir/a276_document_retrieval/src/script/../demo/visualise.py:88: UserWarning: Glyph 50612 (\N{HANGUL SYLLABLE EO}) missing from current font.
-  plt.savefig('test.png')
-/home/pimang62/projects/ir/a276_document_retrieval/src/script/../demo/visualise.py:88: UserWarning: Glyph 46523 (\N{HANGUL SYLLABLE DDEOH}) missing from current font.
-  plt.savefig('test.png')
-/home/pimang62/projects/ir/a276_document_retrieval/src/script/../demo/visualise.py:88: UserWarning: Glyph 44172 (\N{HANGUL SYLLABLE GE}) missing from current font.
-  plt.savefig('test.png')
-/home/pimang62/projects/ir/a276_document_retrieval/src/script/../demo/visualise.py:88: UserWarning: Glyph 44288 (\N{HANGUL SYLLABLE GWAN}) missing from current font.
-  plt.savefig('test.png')
-/home/pimang62/projects/ir/a276_document_retrieval/src/script/../demo/visualise.py:88: UserWarning: Glyph 47532 (\N{HANGUL SYLLABLE RI}) missing from current font.
-  plt.savefig('test.png')
-/home/pimang62/projects/ir/a276_document_retrieval/src/script/../demo/visualise.py:88: UserWarning: Glyph 54616 (\N{HANGUL SYLLABLE HA}) missing from current font.
-  plt.savefig('test.png')
-/home/pimang62/projects/ir/a276_document_retrieval/src/script/../demo/visualise.py:88: UserWarning: Glyph 45208 (\N{HANGUL SYLLABLE NA}) missing from current font.
-  plt.savefig('test.png')
-/home/pimang62/projects/ir/a276_document_retrieval/src/script/../demo/visualise.py:88: UserWarning: Glyph 50836 (\N{HANGUL SYLLABLE YO}) missing from current font.
-  plt.savefig('test.png')
-findfont: Font family 'NanumGothic' not found.
-findfont: Font family 'NanumGothic' not found.
-findfont: Font family 'NanumGothic' not found.
-findfont: Font family 'NanumGothic' not found.
-findfont: Font family 'NanumGothic' not found.
-findfont: Font family 'NanumGothic' not found.
-findfont: Font family 'NanumGothic' not found.
-findfont: Font family 'NanumGothic' not found.
-findfont: Font family 'NanumGothic' not found.
-findfont: Font family 'NanumGothic' not found.
-findfont: Font family 'NanumGothic' not found.
-findfont: Font family 'NanumGothic' not found.
-/home/pimang62/.conda/envs/exper/lib/python3.10/site-packages/streamlit/elements/pyplot.py:161: UserWarning: Glyph 50501 (\N{HANGUL SYLLABLE AG}) missing from current font.
-  fig.savefig(image, **kwargs)
-/home/pimang62/.conda/envs/exper/lib/python3.10/site-packages/streamlit/elements/pyplot.py:161: UserWarning: Glyph 49457 (\N{HANGUL SYLLABLE SEONG}) missing from current font.
-  fig.savefig(image, **kwargs)
-/home/pimang62/.conda/envs/exper/lib/python3.10/site-packages/streamlit/elements/pyplot.py:161: UserWarning: Glyph 45843 (\N{HANGUL SYLLABLE DAES}) missing from current font.
-  fig.savefig(image, **kwargs)
-/home/pimang62/.conda/envs/exper/lib/python3.10/site-packages/streamlit/elements/pyplot.py:161: UserWarning: Glyph 44544 (\N{HANGUL SYLLABLE GEUL}) missing from current font.
-  fig.savefig(image, **kwargs)
-/home/pimang62/.conda/envs/exper/lib/python3.10/site-packages/streamlit/elements/pyplot.py:161: UserWarning: Glyph 51008 (\N{HANGUL SYLLABLE EUN}) missing from current font.
-  fig.savefig(image, **kwargs)
-/home/pimang62/.conda/envs/exper/lib/python3.10/site-packages/streamlit/elements/pyplot.py:161: UserWarning: Glyph 50612 (\N{HANGUL SYLLABLE EO}) missing from current font.
-  fig.savefig(image, **kwargs)
-/home/pimang62/.conda/envs/exper/lib/python3.10/site-packages/streamlit/elements/pyplot.py:161: UserWarning: Glyph 46523 (\N{HANGUL SYLLABLE DDEOH}) missing from current font.
-  fig.savefig(image, **kwargs)
-/home/pimang62/.conda/envs/exper/lib/python3.10/site-packages/streamlit/elements/pyplot.py:161: UserWarning: Glyph 44172 (\N{HANGUL SYLLABLE GE}) missing from current font.
-  fig.savefig(image, **kwargs)
-/home/pimang62/.conda/envs/exper/lib/python3.10/site-packages/streamlit/elements/pyplot.py:161: UserWarning: Glyph 44288 (\N{HANGUL SYLLABLE GWAN}) missing from current font.
-  fig.savefig(image, **kwargs)
-/home/pimang62/.conda/envs/exper/lib/python3.10/site-packages/streamlit/elements/pyplot.py:161: UserWarning: Glyph 47532 (\N{HANGUL SYLLABLE RI}) missing from current font.
-  fig.savefig(image, **kwargs)
-/home/pimang62/.conda/envs/exper/lib/python3.10/site-packages/streamlit/elements/pyplot.py:161: UserWarning: Glyph 54616 (\N{HANGUL SYLLABLE HA}) missing from current font.
-  fig.savefig(image, **kwargs)
-/home/pimang62/.conda/envs/exper/lib/python3.10/site-packages/streamlit/elements/pyplot.py:161: UserWarning: Glyph 45208 (\N{HANGUL SYLLABLE NA}) missing from current font.
-  fig.savefig(image, **kwargs)
-/home/pimang62/.conda/envs/exper/lib/python3.10/site-packages/streamlit/elements/pyplot.py:161: UserWarning: Glyph 50836 (\N{HANGUL SYLLABLE YO}) missing from current font.
-  fig.savefig(image, **kwargs)
-findfont: Font family 'NanumGothic' not found.
-findfont: Font family 'NanumGothic' not found.
-findfont: Font family 'NanumGothic' not found.
-findfont: Font family 'NanumGothic' not found.
-findfont: Font family 'NanumGothic' not found.
-findfont: Font family 'NanumGothic' not found.
-findfont: Font family 'NanumGothic' not found.
-findfont: Font family 'NanumGothic' not found.
-findfont: Font family 'NanumGothic' not found.
-findfont: Font family 'NanumGothic' not found.
-findfont: Font family 'NanumGothic' not found.

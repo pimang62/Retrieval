@@ -6,7 +6,7 @@
 
 ### Install
 ```python
-git clone
+git clone https://github.com/pimang62/Retrieval.git
 conda create -n exper python==3.10
 conda activate exper
 pip install -r requirements.txt
@@ -24,7 +24,7 @@ private
 * BGE, KorSIM, Openai(ada)
   * Openai has only "txt" file type
 ```python
-cd src/script
+cd script
 bash create_index.sh
 ```
 
