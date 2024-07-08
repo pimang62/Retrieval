@@ -1,5 +1,5 @@
 #!/bin/bash
 
-nohup streamlit run ../app/src/demo/run_demo.py --server.address 0.0.0.0 --server.port 8081 --server.fileWatcherType none > demo.log 2>&1 &
+streamlit run app/src/demo/run_demo.py --server.address localhost --server.port 8082 > script/demo.log
 
 # 50902

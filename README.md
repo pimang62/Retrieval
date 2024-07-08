@@ -24,27 +24,15 @@ private
 * BGE, KorSIM, Openai(ada)
   * Openai has only "txt" file type
 ```python
-cd script
-bash create_index.sh
+bash script/create_index.sh
 ```
 
 ### Run demo
 ```python
-bash run_demo.sh
+bash script/run_demo.sh
 ```
 
 ### Show demo
 ```python
-cat demo.log
-```
-
-### Evaluation
-* BGE, KorSIM
-```python
-bash eval.sh
-```
-
-* Openai(ada)
-```python
-bash openai_eval.sh
+cat script/demo.log
 ```

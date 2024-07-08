@@ -1,10 +1,11 @@
 import yaml
 import streamlit as st
-from vectorstore import VectorStore
-from visualise import visualise
+import sys
+sys.path.append("/home/pimang62/projects/ir/Retrieval/")
+from app.src.demo.vectorstore import VectorStore
+from app.src.demo.visualise import visualise
 
-import os
-yaml_path = os.path.join(os.pardir, "demo/retrieval_config.yaml")
+yaml_path = "/home/pimang62/projects/ir/Retrieval/app/src/demo/retrieval_config.yaml"
 
 def main():
     """streamlit demo 실행"""

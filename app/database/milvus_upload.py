@@ -89,7 +89,7 @@ def embed2docs(result):
 if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument('--file_path', type=str, default='/home/pimang62/projects/qachat/Retrieval/data/openai_emb.json')
+    parser.add_argument('--file_path', type=str, default='/home/pimang62/projects/ir/Retrieval/data/openai_emb.json')
     parser.add_argument('--collection_name', type=str, default='baemin')
 
     args = parser.parse_args()

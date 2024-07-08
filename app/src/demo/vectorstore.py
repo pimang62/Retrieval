@@ -4,8 +4,7 @@ VectorStore
 1. Index Builder
 2. Retriever
 """
-import os, sys
-sys.path.append("/home/pimang62/projects/qachat/Retrieval")
+import os
 
 from app.chunker.data_chunk import ChunkerFactory
 from app.embeddings.huggingface import TransformersEmbedding
@@ -21,7 +20,7 @@ import pickle
 import umap.umap_ as umap
 from tqdm import tqdm
 
-root_dir = "/home/pimang62/projects/qachat/Retrieval/app/src"
+root_dir = "/home/pimang62/projects/ir/Retrieval/app/src"
 
 def project_embeddings(embeddings, umap_transform):
     umap_embeddings = np.empty((len(embeddings), 2))
@@ -166,9 +165,5 @@ if __name__ == "__main__":
     ## Retriever
     # retrieve_documents = vectorstore.retrieve(query="대체 발급된 안심 번호는 사용할 수 있는 기한이 언제야?",
     #                                           top_k=3)
-    # retrieve_documents = vectorstore.retrieve(query="진료 과정에서 발생한 의료 폐기물은 어떻게 처리하나요?",
-    #                                             top_k=3)  # 불용어나 특수 문자 전처리 필요할듯
-    # retrieve_documents = vectorstore.retrieve(query="모델의 세부 사항을 알려주세요.",
-    #                                     top_k=3)  # 
     
     # print(retrieve_documents)

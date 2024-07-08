@@ -49,7 +49,7 @@ def visualise(query,
               database):
     
     # path 설정
-    src_dir = "/home/pimang62/projects/ir/a276_document_retrieval/src"
+    src_dir = "/home/pimang62/projects/ir/Retrieval/app/src"
     vectorstore_dir = os.path.join(src_dir, "vectorstore")
     umap_models_dir = os.path.join(src_dir, "umap_models")
     global_path_type = f"{database}_{embedding_type}_{chunk_size}_{chunk_overlap}/{database}"
@@ -85,7 +85,7 @@ def visualise(query,
     plt.gca().set_aspect('equal', 'datalim')
     plt.title(f'{query}')
     plt.axis('off')
-    plt.savefig('../demo/test.png')
+    plt.savefig(os.path.join(src_dir, 'demo/trial.png'))
     plt.show()
     return fig
 

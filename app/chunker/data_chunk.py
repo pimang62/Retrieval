@@ -124,7 +124,7 @@ class ChunkerFactory:
     def __init__(self, database_name):  # <- fname X
         self.database_name = database_name
         # self.fname = fname
-        self.fname = os.path.join("/home/pimang62/projects/qachat/Retrieval/app/data", f"{self.database_name}.{self.database_name}")
+        self.fname = os.path.join("/home/pimang62/projects/ir/Retrieval/app/data", f"{self.database_name}.{self.database_name}")
 
     def create_chunker(self):
         if self.database_name in "txt":

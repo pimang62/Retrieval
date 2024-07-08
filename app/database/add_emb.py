@@ -5,9 +5,8 @@ import sys
 sys.path.append("/home/pimang62/projects/ir/a276_document_retrieval/")
 from app.embeddings.openai import OpenAIEmbedding
 
-load_path = '/home/pimang62/projects/qachat/Retrieval/demo/data/merge_requested_form.json'
-save_path = '/home/pimang62/projects/qachat/Retrieval/demo/data/openai_expert_emb.json'
-# save_path = '/home/pimang62/projects/ir/a276_document_retrieval/demo/data/openai_expert_emb_1.json'
+load_path = '/home/pimang62/projects/ir/Retrieval/app/demo/data/merge_requested_form.json'
+save_path = '/home/pimang62/projects/ir/Retrieval/app/demo/data/openai_expert_emb.json'
 
 with open(load_path, 'r') as f:
     print("Starting make embeddings ...")

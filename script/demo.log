@@ -4,5 +4,5 @@ Collecting usage statistics. To deactivate, set browser.gatherUsageStats to Fals
 
   You can now view your Streamlit app in your browser.
 
-  URL: http://0.0.0.0:8081
+  URL: http://localhost:8082
 
