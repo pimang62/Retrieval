@@ -1,0 +1,16 @@
+__pycache__/
+*.pt
+*.index
+vectorstore/
+umap_models/
+baemin_nohead.txt
+baemin_head.txt
+data/
+.env
+model/
+spliter.sh
+augmented/
+baemin_passages/
+dataset/
+baemin_title_passage_map.p
+logs/
